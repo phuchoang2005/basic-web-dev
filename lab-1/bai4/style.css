@@ -1,0 +1,38 @@
+#_container{
+    background-color: #ffedca;
+    width: 50rem;
+    display: flex;
+    position: fixed;
+    inset: 0px;
+    width: 40rem;
+    height: 20rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    border-style: solid;
+}
+#sample_image > img{
+    width: 150px;
+}
+#main_table > h1{
+    text-align: center;
+    color: rgb(206, 43, 206);
+    font-size: 2rem;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: #cc6600;
+    text-decoration-color: #FFFFFF;
+}
+.STT{
+    width: 3rem;
+    text-align: center;
+}
+.meal{
+    width: 20rem;
+}
+.white_row{
+    background-color: #ffffff;   
+}

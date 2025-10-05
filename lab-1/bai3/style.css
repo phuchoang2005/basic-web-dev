@@ -1,0 +1,40 @@
+form{
+    position: fixed;
+    inset: 0px;
+    width: 18rem;
+    height: 8rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    background-color: aqua;
+}
+#first_number{
+    display: flex;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#second_number{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    display:flex;
+}
+#second_number > label{
+    width: 5.125rem;
+}
+#equation_button{
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#equation_button > button{
+    margin-right: 0.3rem;
+    width: 2.75rem;
+}
+#result{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+}
+#result > label{
+    width: 5.125rem;
+}

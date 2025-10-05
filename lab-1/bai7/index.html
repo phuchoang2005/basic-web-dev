@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="_container">
+      <form action="">
+        <table border="1" id="main_table">
+          <thead>
+            <h1>Phiếu đăng ký tour du lịch</h1>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label for="name"> Họ và tên khách </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Nhập vào họ và tên"
+                  name="name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address"> Địa chỉ </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Hãy nhập vào địa chỉ"
+                  name="address"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone"> Điện thoại </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Nhập vào số điện thoại"
+                  name="phone"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="tour"> Tour </label>
+              </td>
+              <td>
+                <select name="tour">
+                  <optinon value="" checked> Chọn Tour du lịch </optinon>
+                  <option value="1">Hạ Long - Hà Nội - Tuần Châu</option>
+                  <option value="2">Hà Nội - Spa</option>
+                  <option value="3">Đà Nẵng - Hội An</option>
+                  <option value="4">Buôn Mê Thuộc - Kon Tum</option>
+                  <option value="5">TPHCM - Nha Trang</option>
+                  <option value="6">TPHCM - Cần Thơ - Cà Mau</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="table_wrapper">
+                  <div class="table_title">
+                    <label> Số lượng khách </label>
+                  </div>
+                  <div id="NoG_Table">
+                    <table class="NumberOfGuest_field">
+                      <tr>
+                        <td>
+                          <label for="adult"> Người lớn </label>
+                          <input type="number" name="adult" placeholder="1" />
+                          <label for="children"> Trẻ em </label>
+                          <input
+                            type="number"
+                            name="children"
+                            placeholder="0"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="note"> Ghi chú </label>
+              </td>
+              <td>
+                <textarea></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="submit_button">
+                <input type="submit" value="Đăng ký" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
