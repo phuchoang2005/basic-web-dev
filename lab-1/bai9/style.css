@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    flex-direction: column;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+}
+
+nav ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}

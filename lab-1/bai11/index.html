@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trường Đại Học Công Nghệ Thông Tin</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f9f9f9;
+      }
+
+      .container {
+        width: 900px;
+        margin: 0 auto;
+        border: 2px solid #5dbb63;
+        background: #fff;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      header img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      header h1 {
+        font-size: 22px;
+        margin: 0;
+        color: #000;
+      }
+
+      /* Navbar */
+      nav {
+        background: #2e7d32;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        flex: 1;
+        text-align: center;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-right: 1px solid #1b5e20;
+      }
+
+      nav ul li:last-child a {
+        border-right: none;
+      }
+
+      nav ul li a:hover {
+        background: #1b5e20;
+      }
+
+      /* Main layout */
+      .main {
+        display: flex;
+        padding: 15px;
+      }
+
+      .left {
+        flex: 2;
+        padding: 10px;
+      }
+
+      .left .box {
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .left .box h3 {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        color: #333;
+      }
+
+      .right {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .right .info {
+        border: 1px solid #00a6a6;
+        background: #c8f0f0;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .right .info h3 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        color: #004d4d;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        background: #f2f2f2;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <img src="logo.png" alt="Logo trường" />
+        <h1>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</h1>
+      </header>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Thông tin</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Tuyển sinh</a></li>
+          <li><a href="#">Nghiên cứu</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main content -->
+      <div class="main">
+        <!-- Left column -->
+        <div class="left">
+          <div class="box">
+            <h3>Chương trình tiên tiến</h3>
+            <p>Chương trình đào tạo tiên tiến là dự án quốc gia do Bộ GD&ĐT.</p>
+            <p><b>Khoa HTTT</b></p>
+          </div>
+
+          <div class="box">
+            <h3>Ngành An Toàn Thông Tin</h3>
+            <p>
+              Chương trình đào tạo kỹ sư tài năng ngành An toàn Thông tin cho
+              phép sinh viên tiếp cận với một chương trình đào tạo tiên tiến,
+              phù hợp với những công nghệ hiện đại, được sử dụng những tài liệu
+              cập nhật nhất và học tập trong điều kiện chất lượng cao.
+            </p>
+            <p><b>Khoa MMT</b></p>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="right">
+          <div class="info">
+            <h3>THÔNG TIN MỚI NHẤT VỀ KỲ THI THPT QUỐC GIA 2015</h3>
+            <p>
+              Sáng 10/12, Phó Cục trưởng Cục Khảo thí&Kiểm định chất lượng, Bộ
+              GD-ĐT Trần Văn Nghĩa tiếp tục giải đáp hàng loạt câu hỏi thí sinh
+              quan tâm đến kỳ thi THPT quốc gia năm 2015.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>Copyright 2014</footer>
+    </div>
+  </body>
+</html>

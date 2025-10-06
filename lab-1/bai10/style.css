@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    position: relative;
+    padding: 0.43rem 1.25rem;
+}

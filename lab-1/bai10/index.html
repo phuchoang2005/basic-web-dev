@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang Quản Trị</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f9f9f9;
+      }
+
+      .sidebar {
+        width: 250px;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 15px;
+      }
+
+      .sidebar h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #555;
+      }
+
+      /* Search box */
+      .search-box {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .search-box input {
+        flex: 1;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .search-box button {
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        background: #eee;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+      }
+
+      /* Navigation */
+      .nav-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-menu li {
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .nav-menu li a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .nav-menu li a:hover {
+        background: #f5f5f5;
+      }
+
+      /* Submenu */
+      .nav-menu li ul {
+        display: none;
+        list-style: none;
+        padding-left: 15px;
+        background: #fafafa;
+      }
+
+      .nav-menu li:hover ul {
+        display: block;
+      }
+
+      .nav-menu li ul li a {
+        font-size: 13px;
+        padding: 8px 10px;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>TRANG QUẢN TRỊ</h2>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+
+      <!-- Navigation -->
+      <ul class="nav-menu">
+        <li><a href="#">⚙️ Quản Lý Chung</a></li>
+        <li>
+          <a href="#">📂 Quản Lý ▾</a>
+          <ul>
+            <li><a href="#">Danh mục sản phẩm</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Phiếu đặt hàng</a></li>
+            <li><a href="#">Hóa đơn</a></li>
+          </ul>
+        </li>
+        <li><a href="#">👤 Tài khoản</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
