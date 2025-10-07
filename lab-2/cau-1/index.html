@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="_container">
+      <form action="">
+        <table border="1">
+          <tr>
+            <td>
+              <label for="salary"> Lương </label>
+            </td>
+            <td>
+              <input type="text" name="salary" id="salary" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="coeff"> Hệ số lương </label>
+            </td>
+            <td>
+              <input type="number" name="coeff" id="coeff" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Tính lương tháng" id="calculate" onclick="cal()"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="total_salary"> Lương tháng </label>
+            </td>
+            <td>
+                <input type="text" name="total_salary" id="total_salary" readonly>
+            </td>
+          </tr>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
