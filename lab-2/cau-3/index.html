@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực Đơn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <span class="date-time">Thứ 2, 06/07/2020, 11:00</span>
+        <span class="employee">Nhân viên: Nguyễn Văn A</span>
+      </header>
+
+      <main class="main-content">
+        <h1 class="title">THỰC ĐƠN</h1>
+        <div class="menu-form">
+          <div class="form-column">
+            <div class="column-header">Bàn</div>
+            <div class="column-body">
+              <select name="table" id="table-select">
+                <option value="Bàn 1">Bàn 1</option>
+                <option value="Bàn 2">Bàn 2</option>
+                <option value="Bàn 3">Bàn 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="column-header">Món ăn</div>
+            <div class="column-body">
+              <select name="dishes" id="dish-select" size="7">
+                <option selected>Bún bò</option>
+                <option>Hủ tiếu</option>
+                <option>Bánh canh</option>
+                <option>Phở bò</option>
+                <option>Nui</option>
+                <option>Bánh mỳ thịt</option>
+                <option>Bánh cuốn</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="call_button">Gọi Món</button>
+        </div>
+        <div id="pre-invoice"></div>
+        <div id="invoice_container"></div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

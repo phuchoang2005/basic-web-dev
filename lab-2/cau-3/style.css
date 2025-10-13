@@ -1,0 +1,212 @@
+/* --- General Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.date-time,
+.employee {
+    font-size: 0.9rem;
+}
+
+/* --- Main Content --- */
+.main-content {
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.menu-form {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa các cột */
+    gap: 10px;
+    /* Khoảng cách giữa hai cột */
+    border: 1px solid #ccc;
+    /* Viền bao ngoài form */
+    padding: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    /* Bỏ viền dưới để nối liền với body */
+}
+
+.column-body {
+    padding: 0;
+}
+
+/* --- Select/Dropdown Styles --- */
+select {
+    border: 1px solid #aaa;
+    padding: 5px;
+    font-size: 1rem;
+    width: 200px;
+    /* Chiều rộng của các ô chọn */
+}
+
+/* Kiểu cho dropdown chọn bàn */
+#table-select {
+    width: 100%;
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước */
+}
+
+/* Kiểu cho list box chọn món ăn */
+#dish-select {
+    width: 100%;
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước */
+    border-top: none;
+    /* Bỏ viền trên để nối liền với header */
+}
+
+/* Kiểu cho các lựa chọn trong list box */
+#dish-select option {
+    padding: 5px;
+}
+
+/* Loại bỏ viền ngoài của select khi được focus */
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Thay đổi màu viền khi được chọn */
+}
+
+#receipt {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 450px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(18, 11, 11, 0.1);
+    padding: 20px;
+}
+
+#receipt h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.invoice-table th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+
+.invoice-table td.item-name {
+    text-align: left;
+    font-size: 16px;
+}
+
+.invoice-table input[type="number"],
+.invoice-table input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.invoice-table input[type="text"] {
+    text-align: right;
+}
+
+.delete-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.delete-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.total-row td {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f9f9f9;
+}
+
+.total-row .total-label {
+    text-align: left;
+}
+
+.total-row .total-amount {
+    text-align: right;
+    color: #333;
+}
+
+.print-btn-container {
+    text-align: center;
+}
+
+.print-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.print-btn:hover {
+    background-color: #e0e0e0;
+}
