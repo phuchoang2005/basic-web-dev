@@ -7,6 +7,7 @@ const menuPrices = [
   { name: "Bánh mỳ thịt", price: 12000 },
   { name: "Bánh cuốn", price: 15000 },
 ];
+
 /* 
   {
     name: "Bún bò",
@@ -27,7 +28,7 @@ function renderTable() {
   const table_container = document.getElementById("pre-invoice");
   table_container.innerHTML = "";
   for (const [table_id, itemList] of Object.entries(tables)) {
-    const total = itemList.reduce((sum, item) => item.total, 0);
+    const totalAmount = itemList.reduce((sum, item) => (sum += item.total), 0);
     const rows = itemList
       .map(
         (item) => `<tr>
@@ -46,7 +47,7 @@ function renderTable() {
         <tr><th colspan="4">${table_id}</th></tr>
         <tr><th>Món</th><th>SL</th><th>Tiền</th><th></th></tr>
         ${rows}
-        <tr><td colspan="4" style="text-align:right;font-weight:bold">Tổng tiền: ${total.toLocaleString()} đ</td></tr>
+        <tr><td colspan="4" style="text-align:right;font-weight:bold">Tổng tiền: ${totalAmount.toLocaleString()} đ</td></tr>
         <tr><td colspan="4" style="text-align:center">
           <button onclick="printInvoice('${table_id}')">In hóa đơn</button>
         </td></tr>
