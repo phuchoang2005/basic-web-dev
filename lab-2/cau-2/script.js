@@ -25,36 +25,44 @@ function purchase() {
     dachon.push(thucpham.value);
   }
 
-  let tonggia = 0;
-  const chitiet = [];
+  const chiTietThanhToan = [];
 
-  dachon.forEach((thucpham) => {
-    const gia = bangGia[thucpham] || 0;
-    chitiet.push({ thucpham, gia });
-    tonggia += gia;
-  });
+  let tonggia = dachon.reduce((totalAmount, item) => {
+    const gia = bangGia[item] || 0;
+    chiTietThanhToan.push({
+      name: item,
+      price: gia,
+    });
+    return (totalAmount += gia);
+  }, 0);
 
   if (document.getElementById("evening").checked) {
     tonggia *= 1.1;
   }
 
+  let rows = chiTietThanhToan
+    .map((item) => {
+      return `
+      <tr><td>${item.name}</td><td>${item.price}</td></tr>
+    `;
+    })
+    .join("");
+
   let html = `
     <table border="1" style="width:300px; margin:auto; background-color:#eaffea; border-collapse:collapse;">
+    <thead>
       <tr style="background-color:cyan; text-align:center;">
         <th>Các món đã dùng</th><th>Tiền</th>
       </tr>
-  `;
-
-  chitiet.forEach((item) => {
-    html += `<tr><td>${
-      item.thucpham
-    }</td><td>${item.gia.toLocaleString()} đ</td></tr>`;
-  });
-
-  html += `
+    </thead>
+    <tbody>
+      ${rows}
+    </tbody>
+    <tfoot>
       <tr style="background-color:yellow; font-weight:bold;">
         <td>Tổng tiền</td><td>${tonggia.toLocaleString()} đ</td>
       </tr>
+    </tfoot>
     </table>
   `;
 
