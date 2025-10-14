@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt vé và Hóa đơn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <section id="booking-section" class="page-section booking-container">
+        <h2>Mua vé</h2>
+        <form>
+          <table class="booking-form">
+            <tbody>
+              <tr>
+                <td><label for="date">Ngày chiếu</label></td>
+                <td>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    class="form-input"
+                    placeholder="dd / mm / yyyy"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="movie">Phim</label></td>
+                <td>
+                  <select id="movie" name="movie" class="form-select" required>
+                    <option value="" disabled selected>Chọn phim</option>
+                    <option>Yêu em bất chấp</option>
+                    <option>Tháng năm rực rỡ</option>
+                    <option>Và em sẽ đến</option>
+                    <option>Chuyện ma lúc 3 giờ sáng</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="showtime">Suất chiếu</label></td>
+                <td>
+                  <select
+                    id="showtime"
+                    name="showtime"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>Chọn suất chiếu</option>
+                    <option value="9h-12h">9h – 12h (45.000 đ)</option>
+                    <option value="13h-16h">13h – 16h (45.000 đ)</option>
+                    <option value="17h-20h">17h – 20h (55.000 đ)</option>
+                    <option value="22h-2h">22h – 2h (35.000 đ)</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="screen">Phòng chiếu</label></td>
+                <td>
+                  <select
+                    id="screen"
+                    name="screen"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>Chọn phòng chiếu</option>
+                    <option value="Bronze">Đồng 1.0</option>
+                    <option value="Silver">Bạc 1.2</option>
+                    <option value="Gold">Vàng 1.5</option>
+                    <option value="Diamond">Kim Cương 2.0</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="seat">Chọn chỗ ngồi</label></td>
+                <td>
+                  <select
+                    id="seat"
+                    name="seat"
+                    class="form-select"
+                    size="4"
+                    required
+                    multiple
+                  >
+                    <option>Ghế 01</option>
+                    <option>Ghế 02</option>
+                    <option>Ghế 03</option>
+                    <option>Ghế 04</option>
+                    <option>Ghế 05</option>
+                    <option>Ghế 06</option>
+                    <option>Ghế 07</option>
+                    <option>Ghế 08</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="submit-cell">
+                  <input type="button" id="submit-btn" value="Mua vé" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </section>
+
+      <section
+        id="invoice-section"
+        class="page-section invoice-container"
+      ></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
