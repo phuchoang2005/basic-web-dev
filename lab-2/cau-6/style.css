@@ -1,0 +1,199 @@
+      /* CSS để tạo kiểu cho giao diện */
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          padding-top: 40px;
+      }
+
+      .tour-form-container {
+          background-color: #f5e8c7;
+          /* Màu nền vàng nhạt */
+          padding: 30px;
+          border: 2px solid #ccc;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          width: 600px;
+      }
+
+      .tour-form-container h1 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 25px;
+          font-weight: bold;
+      }
+
+      .form-table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0 15px;
+          /* Khoảng cách giữa các hàng */
+      }
+
+      .form-table td {
+          vertical-align: middle;
+      }
+
+      .form-table label {
+          font-weight: bold;
+          color: #000080;
+          /* Màu xanh navy cho nhãn */
+          padding-right: 10px;
+          display: block;
+      }
+
+      .form-table input[type="text"],
+      .form-table input[type="tel"],
+      .form-table select,
+      .form-table textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          /* Đảm bảo padding không làm tăng kích thước */
+      }
+
+      .passenger-count-fieldset {
+          border: 1px solid #999;
+          border-radius: 5px;
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+      }
+
+      .passenger-count-fieldset legend {
+          font-weight: bold;
+          color: #000080;
+          padding: 0 5px;
+          margin-left: 10px;
+      }
+
+      .passenger-count-fieldset label {
+          color: #333;
+          /* Màu chữ đen cho Người lớn/Trẻ em */
+          font-weight: normal;
+      }
+
+      .passenger-count-fieldset input[type="number"] {
+          width: 60px;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-right: 20px;
+      }
+
+      .notes-textarea {
+          height: 100px;
+          resize: vertical;
+      }
+
+      .submit-button {
+          display: block;
+          width: 120px;
+          padding: 10px;
+          margin: 20px auto 0;
+          background-color: #f0f0f0;
+          border: 1px solid #aaa;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: bold;
+      }
+
+      .submit-button:hover {
+          background-color: #e0e0e0;
+      }
+
+      #invoice-section {
+          width: 600px;
+          border: 1px solid #333;
+          padding: 20px;
+          box-sizing: border-box;
+          background-color: #fff;
+      }
+
+      #invoice-section h2 {
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 20px;
+          font-size: 1.2em;
+      }
+
+      .invoice-table {
+          width: 100%;
+          border-collapse: collapse;
+          /* Gộp đường viền */
+      }
+
+      .invoice-table th,
+      .invoice-table td {
+          padding: 10px;
+          text-align: left;
+      }
+
+      .invoice-table thead th {
+          font-weight: bold;
+          border-bottom: 1px solid #ccc;
+      }
+
+      /* Căn lề cho các cột số */
+      .col-qty,
+      .col-price,
+      .col-total {
+          text-align: right;
+      }
+
+      .invoice-table tfoot .total-label {
+          font-weight: bold;
+          font-size: 1.1em;
+      }
+
+      .invoice-table tfoot .total-amount {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-align: right;
+      }
+
+      #information-container {
+          width: 600px;
+          border: 1px solid #333;
+          padding: 20px;
+          box-sizing: border-box;
+          background-color: #fff;
+      }
+
+      #information-container h2 {
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 25px;
+          font-size: 1.3em;
+          font-weight: bold;
+      }
+
+      /* Sử dụng CSS Grid cho layout 2 cột */
+      .info-grid {
+          display: grid;
+          grid-template-columns: max-content 1fr;
+          /* Cột 1 co giãn theo nội dung, cột 2 lấp đầy */
+          gap: 10px 20px;
+          /* 10px khoảng cách hàng, 20px khoảng cách cột */
+          font-size: 16px;
+      }
+
+      .info-grid dt {
+          /* Các nhãn (cột trái) */
+          font-weight: normal;
+          color: #333;
+      }
+
+      .info-grid dd {
+          /* Dữ liệu (cột phải) */
+          margin: 0;
+          /* Xóa margin mặc định của dd */
+          color: #000;
+      }

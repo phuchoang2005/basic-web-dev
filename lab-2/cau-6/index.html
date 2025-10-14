@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phiếu Đăng Ký Tour Du Lịch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="tour-form-container">
+      <h1>Phiếu đăng ký tour du lịch</h1>
+      <form>
+        <table class="form-table">
+          <tr>
+            <td style="width: 25%">
+              <label for="fullName">Họ và tên khách</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Nguyễn Văn A"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Địa chỉ</label></td>
+            <td>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="abc, xyz, jqk"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">Điện thoại</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="09xxxxxxxx"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tour">Tour</label></td>
+            <td>
+              <select id="tour" name="tour" required>
+                <option value="" disabled selected>Chọn tour</option>
+                <option>Hà Nội – Hạ Long – Tuần Châu</option>
+                <option>Hà Nội – Sapa</option>
+                <option>Đà Nẵng – Hội An</option>
+                <option>Buôn Mê Thuộc – Kon Tum</option>
+                <option>TP.HCM – Nha Trang</option>
+                <option>TP.HCM – Cần Thơ – Cà Mau</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <fieldset class="passenger-count-fieldset">
+                <legend>Số lượng đoàn khách</legend>
+                <label for="adults">Người lớn</label>
+                <input
+                  type="number"
+                  id="adults"
+                  name="adults"
+                  value="1"
+                  min="1"
+                />
+
+                <label for="children">Trẻ em</label>
+                <input
+                  type="number"
+                  id="children"
+                  name="children"
+                  value="0"
+                  min="0"
+                />
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="notes">Ghi chú</label></td>
+            <td>
+              <textarea
+                id="notes"
+                name="notes"
+                class="notes-textarea"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Đăng Ký" id="submit-button" />
+      </form>
+    </section>
+    <section id="final-invoice">
+      <section id="information-container"></section>
+      <section id="invoice-container"></section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
