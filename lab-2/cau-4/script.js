@@ -14,6 +14,27 @@ const RoomType = [
 
 document.getElementById("submit-btn").addEventListener("click", payment);
 
+function convertShowedRoomType(roomType) {
+  let showedRoomType = "";
+  switch (roomType) {
+    case "Bronze":
+      showedRoomType = "Đồng";
+      break;
+    case "Silver":
+      showedRoomType = "Bạc";
+      break;
+    case "Gold":
+      showedRoomType = "Vàng";
+      break;
+    case "Diamond":
+      showedRoomType = "Kim cương";
+      break;
+    default:
+      break;
+  }
+  return showedRoomType;
+}
+
 function payment() {
   const time = document.getElementById("date").value;
   const filmName = document.getElementById("movie").value;
@@ -38,23 +59,8 @@ function payment() {
     return (sum += seat.price);
   }, 0);
 
-  let showedRoomType = "";
-  switch (roomType) {
-    case "Bronze":
-      showedRoomType = "Đồng";
-      break;
-    case "Silver":
-      showedRoomType = "Bạc";
-      break;
-    case "Gold":
-      showedRoomType = "Vàng";
-      break;
-    case "Diamond":
-      showedRoomType = "Kim cương";
-      break;
-    default:
-      break;
-  }
+  let showedRoomType = convertShowedRoomType(roomType);
+
   const seatRows = seatList
     .map((seat) => {
       return `

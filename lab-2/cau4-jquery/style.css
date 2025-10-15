@@ -1,0 +1,163 @@
+/* =================================== */
+/* ==      1. GLOBAL STYLES         == */
+/* =================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Dùng font sans-serif hiện đại cho toàn trang */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 40px 20px;
+    /* Thêm khoảng đệm cho trang */
+}
+
+/* Wrapper để căn giữa nội dung và giới hạn chiều rộng */
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tạo khoảng cách giữa các khối section */
+.page-section {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.page-section:last-child {
+    margin-bottom: 0;
+}
+
+/* =================================== */
+/* ==   2. BOOKING FORM STYLES      == */
+/* =================================== */
+.booking-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.booking-form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-form td {
+    padding: 12px 5px;
+    vertical-align: middle;
+}
+
+.booking-form td:first-child {
+    font-weight: 500;
+    color: #444;
+    width: 130px;
+}
+
+.booking-form .form-input,
+.booking-form .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.booking-form .form-input:focus,
+.booking-form .form-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.booking-form .submit-cell {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.booking-form .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.booking-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* =================================== */
+/* ==      3. INVOICE STYLES        == */
+/* =================================== */
+
+/* Ghi đè font mặc định, chỉ áp dụng cho khối hóa đơn */
+.invoice-container {
+    font-family: 'Times New Roman', Times, serif;
+    border: 1.5px solid #000;
+    color: #111;
+}
+
+.invoice-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.invoice-container .main-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.invoice-container .main-info td {
+    padding: 6px 0;
+    font-size: 18px;
+}
+
+.invoice-container .main-info .label {
+    width: 130px;
+}
+
+.invoice-container .main-info .value {
+    font-weight: 500;
+}
+
+.invoice-container .seat-details {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.invoice-container .seat-details thead th {
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.invoice-container .seat-details tbody td {
+    padding: 5px 0;
+}
+
+.invoice-container .seat-details tfoot td {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #000;
+}
+
+.invoice-container .price-col {
+    text-align: right;
+}
