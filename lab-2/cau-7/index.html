@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cv-form">
+      <h2>Đăng ký CV</h2>
+      <form>
+        <table class="form-table">
+          <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" value="Nguyễn Văn C" /></td>
+          </tr>
+          <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text" value="TP.HCM" /></td>
+          </tr>
+          <tr>
+            <td>Điện thoại</td>
+            <td><input type="tel" value="0900000000" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" value="ex@mail.com" /></td>
+          </tr>
+          <tr>
+            <td>Nghề nghiệp</td>
+            <td><input type="text" value="Designer" /></td>
+          </tr>
+          <tr>
+            <td>Ảnh đại diện</td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td>Kỹ năng</td>
+            <td>
+              <div class="skills-container">
+                <div class="skill-item">
+                  <label for="skill-name">Tên kỹ năng</label>
+                  <input type="text" id="skill-name" value="Node JS" />
+                </div>
+                <div class="skill-item">
+                  <label for="skill-level">Mức độ</label>
+                  <input type="range" id="skill-level" min="0" max="100" />
+                </div>
+              </div>
+              <a href="#" class="add-skill-link">Thêm</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="submit-button-container">
+              <button type="submit" class="submit-button">Đăng ký</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
